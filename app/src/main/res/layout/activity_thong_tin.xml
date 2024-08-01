@@ -13,4 +13,50 @@
         android:id="@+id/toolbarthongtin"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/anhdaidien" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoàng Gia Đại"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MSV: PH36944"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sinh ngày: 15/02/2004"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ: Phú Nghĩa, Chương Mỹ, Hà Nội"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+
 </LinearLayout>

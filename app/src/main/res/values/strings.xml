@@ -24,7 +24,7 @@
     <string name="ttkhachhang">Thông tin khách hàng</string>
     <string name="btxacnhan">Xác nhận</string>
     <string name="btback">Trờ về</string>
-    <string name="lienhe">Địa chỉ: Tầng 29, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu Giai, phường Cống Vị, Quận Ba Đình, Hà Nội. Tổng đài hỗ trợ: 19001221 - Email: support@shopapp.vn</string>
+    <string name="lienhe">Địa chỉ: Cổng số 1, Tòa nhà FPT Polytechnic, 13 phố Trịnh Văn Bô, phường Phương Canh, quận Nam Từ Liêm, TP Hà Nội. \n\nTổng đài hỗ trợ: (024) 8582 0808 \n\nEmail: caodang@fpt.edu.vn</string>
     <string name="follow">Theo dõi chúng tôi trên :</string>
     <string name="title_activity_main">MainActivity</string>
     <!-- Strings used for fragments for navigation -->

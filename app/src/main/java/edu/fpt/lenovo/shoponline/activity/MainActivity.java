@@ -168,10 +168,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-//            case R.id.menugiohang:
-//                Intent intent = new Intent(getApplicationContext(), );
-//                startActivity(intent);
+        int itemId = item.getItemId();
+        if (itemId == R.id.menugiohang) {
+            Intent intent = new Intent(getApplicationContext(), GioHangActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
@@ -248,6 +248,49 @@ public class MainActivity extends AppCompatActivity {
                         }
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
+                    case 2:
+                        if (CheckConnection.haveNetworkConnection(getApplicationContext())) {
+                            Intent intent = new Intent(MainActivity.this, LaptopActivity.class);
+                            intent.putExtra("idloaisanpham", mangloaisp.get(position).getID());
+                            startActivity(intent);
+                        }
+                        else {
+                            CheckConnection.ShowToastLong(getApplicationContext(), "Vui lòng kiểm tra lại kết nối");
+                        }
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case 3:
+                        if (CheckConnection.haveNetworkConnection(getApplicationContext())) {
+                            Intent intent = new Intent(MainActivity.this, SaleActivity.class);
+                            intent.putExtra("idloaisanpham", mangloaisp.get(position).getID());
+                            startActivity(intent);
+                        }
+                        else {
+                            CheckConnection.ShowToastLong(getApplicationContext(), "Vui lòng kiểm tra lại kết nối");
+                        }
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case 4:
+                        if (CheckConnection.haveNetworkConnection(getApplicationContext())) {
+                            Intent intent = new Intent(MainActivity.this, LienHeActivity.class);
+                            startActivity(intent);
+                        }
+                        else {
+                            CheckConnection.ShowToastLong(getApplicationContext(), "Vui lòng kiểm tra lại kết nối");
+                        }
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case 5:
+                        if (CheckConnection.haveNetworkConnection(getApplicationContext())) {
+                            Intent intent = new Intent(MainActivity.this, ThongTinActivity.class);
+                            startActivity(intent);
+                        }
+                        else {
+                            CheckConnection.ShowToastLong(getApplicationContext(), "Vui lòng kiểm tra lại kết nối");
+                        }
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
                 }
             }
         });

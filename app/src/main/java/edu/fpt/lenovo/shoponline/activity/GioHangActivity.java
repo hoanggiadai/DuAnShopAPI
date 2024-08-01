@@ -90,13 +90,7 @@ public class GioHangActivity extends AppCompatActivity {
                             MainActivity.manggiohang.remove(position);
                             gioHangAdapter.notifyDataSetChanged();
                             UpdateTongTien();
-                            if (MainActivity.manggiohang.size()<=0){
-                                txtThongBao.setVisibility(View.VISIBLE);
-                            } else {
-                                txtThongBao.setVisibility(View.INVISIBLE);
-                                gioHangAdapter.notifyDataSetChanged();
-                                UpdateTongTien();
-                            }
+
                         }
                     }
                 });

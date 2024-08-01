@@ -15,13 +15,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="31">
+        <activity
+            android:name=".activity.SaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LaptopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ThongTinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LienHeActivity"
+            android:exported="false" />
         <activity android:name=".activity.ChitietSanPham" />
         <activity android:name=".activity.GioHangActivity" />
         <activity
             android:name=".activity.DienThoaiActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.HelloActivity"
             android:exported="true"
@@ -35,7 +46,7 @@
         </activity>
         <activity
             android:name=".activity.MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
